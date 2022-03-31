@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Trybewarts Wizarding School</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Trybewarts Wizarding School</title>
 </head>
-<body>    
-    <header class="header">        
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <img src="images/trybewarts-header-logo.svg" alt="Imagem logo Trybewarts" class="trybewarts-header-logo">
-    </header>
-    
-    <!-- Adicionar dentro do formulário com id 'evaluation-form' -->
-    <div class="nome-sobrenome">
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="input-lastname" placeholder="Sobrenome">
+
+<body>
+  <header class="header">
+    <img src="images/trybewarts-header-logo.svg" alt="Imagem logo Trybewarts" class="trybewarts-header-logo">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <div>
+      <form class="trybewarts-login">
+        <input id="nome" name="email" placeholder="Email">
+        <input type="password" id="senha" name="password" placeholder="Senha">
+        <button id="btn">Entrar</button>
+      </form>
     </div>
-    <input type="text" id="input-email" placeholder="Email">
+  </header>
 
-    <!-- INPUT SELECT -->
+  <!-- Adicionar dentro do formulário com id 'evaluation-form' -->
+  <div class="nome-sobrenome">
+    <input type="text" id="input-name" placeholder="Nome">
+    <input type="text" id="input-lastname" placeholder="Sobrenome">
+  </div>
+  <input type="text" id="input-email" placeholder="Email">
 
-    <div class="radio-family">      
+  <!-- INPUT SELECT -->
+
+      <div class="radio-family">      
       <label id="label-family">Qual sua família?</label>
+     
       <div>
         <input type="radio" name="family" value="Frontend" id="family-frontend">
         <label for="family-frontend">Família Frontend</label>
@@ -36,13 +46,23 @@
         <input type="radio" name="family" value="Fullstack" id="family-fullstack">
         <label for="family-fullstack">Família Fullstack</label>
       </div>
+<<<<<<< HEAD
     </div>
     
     <!-- INPUT CHECKBOX -->
 
     <label id="label-rate">Como você avalia a Trybewarts</label>
 
+=======
+    </div>   
+<!-- INPUT CHECKBOX -->
 
-    <script src="script.js"></script>
+
+<label id="label-rate">Como você acalia a Trybewarts?</label>
+
+<script src="script.js"></script>
+>>>>>>> b00fcd1830ca3345d2496b18e7beeae13eeca4ed
+
 </body>
+
 </html>
