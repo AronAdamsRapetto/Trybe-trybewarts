@@ -48,3 +48,8 @@ main form {
 .imagem-logo img {
   height: 500px;
 }
+
+.input {
+  display: flex;
+  flex-basis: 50%;
+}

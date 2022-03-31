@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Trybewarts Wizarding School</title>
 </head>
-
 <body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="Imagem logo Trybewarts" class="trybewarts-header-logo">
@@ -27,11 +26,15 @@
         <input type="text" id="input-name" placeholder="Nome">
         <input type="text" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <input type="text" id="input-email" placeholder="Email">
-    </form>
-
-    <!-- INPUT SELECT -->
-
+      <div class="email-house">
+        <input type="text" id="input-email" placeholder="Email">   
+        <select id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+      </div>    
     <div class="radio-family">
       <label id="label-family">Qual sua família?</label>
       <div>
@@ -47,13 +50,10 @@
         <label for="family-fullstack">Família Fullstack</label>
       </div>
     </div>
-
-    <!-- INPUT CHECKBOX -->
-
-    <div class="imagem-logo">
-      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
     </div>
-    <label id="label-rate">Como você acalia a Trybewarts?</label>
+
+    <!-- INPUT CHECKBOX -->    
+    
     <div class="radio-rate">
       <label id="label-rate">Como você avalia a Trybewarts?</label>
       <input type="radio" name="rate" value="1" id="rate-1">
@@ -82,10 +82,12 @@
 
     <label for="agreement" id="label-infos"> Você concorda com o uso das informações acima?</label>
     <input type="checkbox" id="agreement">
-
-    <script src="script.js"></script>
-
+    </form>
+    <div class="imagem-logo">
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
+    </div>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
