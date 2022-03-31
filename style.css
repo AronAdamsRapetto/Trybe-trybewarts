@@ -13,3 +13,14 @@ header {
 .nome-sobrenome #input-name, .nome-sobrenome #input-lastname {
   flex-basis: 50%;
 }
+
+/* Estilizacao dos radio buttons em coluna */
+
+.radio-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-family div {
+  margin: 5px 0;
+}
