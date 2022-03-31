@@ -9,22 +9,21 @@
 .trybewarts-header-logo {
   width: 70px;
 }
-.trybewarts-login{
+
+.trybewarts-login {
   display: flex;
 }
 
-
 /* Estilizacao dos inputs nome e sobrenome em linha */
 .nome-sobrenome {
-  display: flex;  
+  display: flex;
 }
 
-.nome-sobrenome #input-name, .nome-sobrenome #input-lastname {
+.nome-sobrenome #input-name , .nome-sobrenome #input-lastname {
   flex-basis: 50%;
 }
 
 /* Estilizacao dos radio buttons em coluna */
-
 .radio-family {
   display: flex;
   flex-direction: column;
@@ -35,18 +34,17 @@
 }
 
 /* Estilizacao evaluation-form */
-main{
+main {
   display: flex;
-  width: 675px
+  width: 675px;
 }
 
-main form{
+main form {
   display: flex;
   flex-direction: column;
   margin: 5px 0;
-  }
-  
-  .imagem-logo img{
-    height: 500px;
-  }
-  
+}
+
+.imagem-logo img {
+  height: 500px;
+}
