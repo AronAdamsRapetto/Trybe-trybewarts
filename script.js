@@ -1,13 +1,12 @@
-let email = document.getElementsByName('email');
-let senha = document.getElementsByName('senha');
-let btn = document.getElementsByClassName('btn');
+const inputNome = document.getElementById('nome');
+const inputSenha = document.getElementById('senha');
+const btnEntra = document.getElementById('btn');
 
-btn.addEventListener("click", entrar);
-
-function entrar(){
-    if (email.value === "tryber@teste.com" and senha === "123456"){
-        window.alert(Olá, Tryber!);
-    } else {
-        window.alert(Email ou senha inválidos.);
-    }
-};
+function entrar() {
+  if (inputNome.value === 'tryber@RuleTester.com' && inputSenha.value === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Email ou senha inválidos.');
+  }
+}
+btnEntra.addEventListener('click', entrar);
