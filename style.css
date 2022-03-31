@@ -7,10 +7,10 @@ header {
 
 /* Estilizacao dos inputs nome e sobrenome em linha */
 .nome-sobrenome {
-  display: flex;  
+  display: flex;
 }
 
-.nome-sobrenome #input-name, .nome-sobrenome #input-lastname {
+.nome-sobrenome #input-name , .nome-sobrenome #input-lastname {
   flex-basis: 50%;
 }
 
