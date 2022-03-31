@@ -3,3 +3,13 @@ header {
   padding: 10px;
   background-color: rgb(50, 167, 145);
 }
+
+
+/* Estilizacao dos inputs nome e sobrenome em linha */
+.nome-sobrenome {
+  display: flex;  
+}
+
+.nome-sobrenome #input-name, .nome-sobrenome #input-lastname {
+  flex-basis: 50%;
+}
