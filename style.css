@@ -45,3 +45,8 @@ main form{
   flex-direction: column;
   margin: 5px 0;
   }
+  
+  .imagem-logo img{
+    height: 500px;
+  }
+  
