@@ -9,10 +9,10 @@
 .trybewarts-header-logo {
   width: 70px;
 }
-.trybewarts-login{
+
+.trybewarts-login {
   display: flex;
 }
-
 
 /* Estilizacao dos inputs nome e sobrenome em linha */
 .nome-sobrenome {
@@ -24,7 +24,6 @@
 }
 
 /* Estilizacao dos radio buttons em coluna */
-
 .radio-family {
   display: flex;
   flex-direction: column;
@@ -33,3 +32,22 @@
 .radio-family div {
   margin: 5px 0;
 }
+<<<<<<< HEAD
+=======
+
+/* Estilizacao evaluation-form */
+main {
+  display: flex;
+  width: 675px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.imagem-logo img {
+  height: 500px;
+}
+>>>>>>> 4ed8d58b754d8af3da734db525daeaa49f9addc9
