@@ -35,21 +35,16 @@
 
 /* Estilizacao evaluation-form */
 main {
-  display: flex;
-  width: 675px;
+  display: flex;  
 }
 
 main form {
   display: flex;
   flex-direction: column;
   margin: 5px 0;
+  width: 675px;
 }
 
 .imagem-logo img {
   height: 500px;
-}
-
-.input {
-  display: flex;
-  flex-basis: 50%;
 }
