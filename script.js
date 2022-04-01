@@ -36,3 +36,11 @@ function enableSubmitButton() {
 }
 
 enableSubmitButton();
+
+function retornarDados(){
+  const nome = document.getElementById('input-name')
+  
+  form.innerHTML = `
+  ${name}
+  `;
+}
