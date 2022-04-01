@@ -11,8 +11,8 @@ body {
   /* Adicionar estilo de fonte */
 }
 
-input , button , select {
-  border-radius: 10px;
+input , button , select, textarea {
+  border-radius: 8px;
   border: 1px solid black;
   background-color: white;
 }
@@ -50,6 +50,7 @@ header h1 {
 /* Estilizacao evaluation-form */
 main {
   display: flex;
+  align-items: center;
 }
 
 h2 {
@@ -60,15 +61,15 @@ h2 {
 main form {
   display: flex;
   flex-direction: column;
-  width: 675px;
-  margin: 30px 70px 0;
+  width: 836,70px;
+  margin: 30px 70px 60px;
 }
 
 /* estilizacao da imagem lateral da página */
 .imagem-logo {
   display: flex;
   justify-content: center;
-  flex-basis: 50%;
+  flex-basis: 50%;  
 }
 
 .imagem-logo img {
@@ -90,7 +91,7 @@ main form {
 /* estilização da linha entre inputs do formulário */
 hr {
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid black;
   margin: 20px 0;
 }
 
@@ -125,10 +126,11 @@ hr {
 .radio-family {
   display: flex;
   flex-direction: column;
+  flex-basis: 50%;
 }
 
 .radio-family div {
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .radio-rate {
@@ -136,5 +138,15 @@ hr {
 }
 
 .radio-rate input {
-  margin-left: 8px;
+  margin-left: 1px;
+}
+
+/* Estilizacao checkbox conteudo (pendente */
+.family-conteudo , .conteudo {
+  display: flex;    
+}
+
+.conteudo {
+  flex-basis: 50%;
+  flex-wrap: wrap;
 }
