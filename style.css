@@ -1,9 +1,31 @@
+/* zerando margins e paddings padrao do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  Adicionar fonte e cor de fundo da página
+} */
+
+input , button , select {
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* estilizacao do header */
 .header {
   display: flex;
   padding: 10px;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+}
+
+header h1 {
+  font-size: 50px;
 }
 
 .trybewarts-header-logo {
@@ -14,13 +36,89 @@
   display: flex;
 }
 
+.trybewarts-login input , button {
+  padding: 5px;
+  margin-left: 8px;
+}
+
+.trybewarts-login button {
+  padding: 0 40px;
+}
+
+/* Estilizacao evaluation-form */
+main {
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+
+  /* Algum problema com a largura do formulario */
+  width: 836.7px;
+  margin: 30px 70px 0;
+}
+
+/* estilizacao da imagem lateral da página */
+.imagem-logo {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.imagem-logo img {
+  height: 500px;
+}
+
 /* Estilizacao dos inputs nome e sobrenome em linha */
 .nome-sobrenome {
   display: flex;
+  margin: 5px;
 }
 
 .nome-sobrenome #input-name , .nome-sobrenome #input-lastname {
   flex-basis: 50%;
+  padding: 5px;
+  margin: 0 2px;
+}
+
+/* estilização da linha entre inputs do formulário */
+hr {
+  width: 100%;
+  border: 1px solid black;
+  margin: 20px 0;
+}
+
+/* estilizando input email e select */
+.box-house {
+  align-items: center;
+}
+
+.email-house , .email-house .box-house {
+  display: flex;
+}
+
+.email-house {
+  margin: 5px;
+}
+
+.email-house #input-email , .email-house .box-house {
+  flex-basis: 50%;
+  margin: 0 2px;
+}
+
+.box-house label {
+  font-size: 20px;
+}
+
+#house {
+  flex-basis: 100%;
+  padding: 5px;
 }
 
 /* Estilizacao dos radio buttons em coluna */
@@ -30,21 +128,13 @@
 }
 
 .radio-family div {
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
-/* Estilizacao evaluation-form */
-main {
-  display: flex;  
+.radio-rate {
+  margin-bottom: 20px;
 }
 
-main form {
-  display: flex;
-  flex-direction: column;
-  margin: 5px 0;
-  width: 675px;
-}
-
-.imagem-logo img {
-  height: 500px;
+.radio-rate input {
+  margin-left: 8px;
 }
