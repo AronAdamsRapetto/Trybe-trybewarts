@@ -11,7 +11,7 @@ body {
   /* Adicionar estilo de fonte */
 }
 
-input , button , select, textarea {
+input , button , select , textarea {
   border-radius: 8px;
   border: 1px solid black;
   background-color: white;
@@ -61,7 +61,7 @@ h2 {
 main form {
   display: flex;
   flex-direction: column;
-  width: 836,70px;
+  width: 836, 70px;
   margin: 30px 70px 60px;
 }
 
@@ -69,7 +69,7 @@ main form {
 .imagem-logo {
   display: flex;
   justify-content: center;
-  flex-basis: 50%;  
+  flex-basis: 50%;
 }
 
 .imagem-logo img {
@@ -143,7 +143,7 @@ hr {
 
 /* Estilizacao checkbox conteudo (pendente */
 .family-conteudo , .conteudo {
-  display: flex;    
+  display: flex;
 }
 
 .conteudo {
