@@ -61,7 +61,7 @@ h2 {
 main form {
   display: flex;
   flex-direction: column;
-  width: 836, 70px;
+  max-width: 675px;
   margin: 30px 70px 60px;
 }
 
