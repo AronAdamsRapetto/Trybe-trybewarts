@@ -21,3 +21,20 @@ function contaCaracteres() {
 }
 
 blocoTexto.addEventListener('keyup', contaCaracteres);
+
+
+
+function enableSubmitButton() {
+  agreement.addEventListener('input', () => {
+    const btnSubmitForm = document.getElementById('submit-btn');
+    const conteudo = document.getElementById('agreement').checked;
+    if (conteudo) {
+      btnSubmitForm.disabled = false;
+    } else {
+      btnSubmitForm.disabled = true;
+    }
+  });
+}
+
+enableSubmitButton();
+
