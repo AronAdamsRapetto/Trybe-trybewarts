@@ -24,7 +24,6 @@ input , button , select {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 header h1 {
@@ -65,10 +64,6 @@ main form {
   /* Algum problema com a largura do formulario */
   width: 836.7px;
   margin: 30px 70px 0;
-  background-color: rgb(50, 167, 145);
-  padding: 8px 15px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
 }
 
 /* estilizacao da imagem lateral da página */
