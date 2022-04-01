@@ -161,3 +161,12 @@ hr {
   flex-direction: column;
   margin-bottom: 10px;
 }
+
+/* Estilizacao do footer */
+footer {
+  height: 30px;
+  background-color: rgb(44, 43, 43);
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
