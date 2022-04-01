@@ -9,7 +9,7 @@
   <title>Trybewarts Wizarding School</title>
 </head>
 
-<body>  
+<body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="Imagem logo Trybewarts" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -21,7 +21,7 @@
       </form>
     </div>
   </header>
-  <main>      
+  <main>
     <form id="evaluation-form">
       <h2>Formulário de Avaliação</h2>
       <div class="nome-sobrenome">
@@ -55,42 +55,53 @@
           <input type="radio" name="family" value="FullStack" id="family-fullstack">
           <label for="family-fullstack">Família Fullstack</label>
         </div>
-      </div>
+        <div id="conteudo">
+          <label for="" id="label-content">"Qual conteúdo você está com mais vontade de aprender?"</label>
+          <br>
+          <input type="checkbox" value="HoFs">HoFs
+          <input type="checkbox" value="Jest">Jest
+          <input type="checkbox" value="Promises">Promises
+          <br>
+          <input type="checkbox" value="React">React
+          <input type="checkbox" value="SQL">SQL
+          <input type="checkbox" value="Python">Python
+        </div>
 
-      <hr>
+        <hr>
 
-      <!-- INPUT CHECKBOX -->
+        <div class="radio-rate">
+          <label id="label-rate">Como você avalia a Trybewarts?</label>
+          <input type="radio" name="rate" value="1" id="rate-1">
+          <label for="rate-1">1</label>
+          <input type="radio" name="rate" value="2" id="rate-2">
+          <label for="rate-2">2</label>
+          <input type="radio" name="rate" value="3" id="rate-3">
+          <label for="rate-3">3</label>
+          <input type="radio" name="rate" value="4" id="rate-4">
+          <label for="rate-4">4</label>
+          <input type="radio" name="rate" value="5" id="rate-5">
+          <label for="rate-5">5</label>
+          <input type="radio" name="rate" value="6" id="rate-6">
+          <label for="rate-6">6</label>
+          <input type="radio" name="rate" value="7" id="rate-7">
+          <label for="rate-7">7</label>
+          <input type="radio" name="rate" value="8" id="rate-8">
+          <label for="rate-8">8</label>
+          <input type="radio" name="rate" value="9" id="rate-9">
+          <label for="rate-9">9</label>
+          <input type="radio" name="rate" value="10" id="rate-10">
+          <label for="rate-10">10</label>
+        </div>
 
-      <div class="radio-rate">
-        <label id="label-rate">Como você avalia a Trybewarts?</label>
-        <input type="radio" name="rate" value="1" id="rate-1">
-        <label for="rate-1">1</label>
-        <input type="radio" name="rate" value="2" id="rate-2">
-        <label for="rate-2">2</label>
-        <input type="radio" name="rate" value="3" id="rate-3">
-        <label for="rate-3">3</label>
-        <input type="radio" name="rate" value="4" id="rate-4">
-        <label for="rate-4">4</label>
-        <input type="radio" name="rate" value="5" id="rate-5">
-        <label for="rate-5">5</label>
-        <input type="radio" name="rate" value="6" id="rate-6">
-        <label for="rate-6">6</label>
-        <input type="radio" name="rate" value="7" id="rate-7">
-        <label for="rate-7">7</label>
-        <input type="radio" name="rate" value="8" id="rate-8">
-        <label for="rate-8">8</label>
-        <input type="radio" name="rate" value="9" id="rate-9">
-        <label for="rate-9">9</label>
-        <input type="radio" name="rate" value="10" id="rate-10">
-        <label for="rate-10">10</label>
-      </div>
-
-      <!-- INPUT TEXTAREA -->
-
-      <div>
+        <textarea id="textarea" cols="30" rows="10" maxlength="500">Deixe seu comentário:</textarea>
+        
         <label for="agreement" id="label-infos"> Você concorda com o uso das informações acima?</label>
         <input type="checkbox" id="agreement">
-      </div>
+    </form>
+    <div>
+      <label for="agreement" id="label-infos"> Você concorda com o uso das informações acima?</label>
+      <input type="checkbox" id="agreement">
+    </div>
     </form>
 
 
@@ -100,5 +111,8 @@
   </main>
   <script src="script.js"></script>
 </body>
+<footer>
+  <p>Direitos reservados à Trybewarts©</p>
+</footer>
 
 </html>

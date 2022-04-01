@@ -60,9 +60,7 @@ h2 {
 main form {
   display: flex;
   flex-direction: column;
-
-  /* Algum problema com a largura do formulario */
-  width: 836.7px;
+  width: 675px;
   margin: 30px 70px 0;
 }
 
