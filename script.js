@@ -45,9 +45,9 @@ function sendButton(evt) {
   const lastname = document.getElementById('input-lastname').value;
   const email = document.getElementById('input-email').value;
   const house = document.getElementById('house').value;
-  const family= document.querySelector('input[name=family]:checked').value
-  const subjects = document.querySelector('input[name=materia]:checked').value
-  const rate = document.querySelector('input[name=rate]:checked').value
+  const family = document.querySelector('input[name=family]:checked').value;
+  const subjects = document.querySelector('input[name=materia]:checked').value;
+  const rate = document.querySelector('input[name=rate]:checked').value;
   const observation = document.getElementById('textarea').value;
   form.innerHTML = `<p>Nome: ${name} ${lastname}</p>
   <p>Email: ${email}</p>
@@ -56,6 +56,6 @@ function sendButton(evt) {
   <p>Matérias: ${subjects}</p>  
   <p>Avaliação: ${rate}</p>
   <p>Observações: ${observation}</p>`;
- }
+ };
 
-btnSubmit .addEventListener('click', sendButton);
+btnSubmit.addEventListener('click', sendButton);
