@@ -38,6 +38,18 @@ function enableSubmitButton() {
 
 enableSubmitButton();
 
+function pegaMarcados() {
+  const opcoes = document.getElementsByClassName('subject');
+  const armazerador = [];
+
+  for (let i = 0; i < opcoes.length; i += 1) {
+    if (opcoes[i].checked === true) {
+      armazerador.push(` ${opcoes[i].value}`);
+    }
+  }
+  return armazerador;
+}
+
 function sendButton(evt) {
   evt.preventDefault();
   const form = document.getElementById('evaluation-form');
@@ -46,16 +58,16 @@ function sendButton(evt) {
   const email = document.getElementById('input-email').value;
   const house = document.getElementById('house').value;
   const family = document.querySelector('input[name=family]:checked').value;
-  const subjects = document.querySelector('input[name=materia]:checked').value;
+  const subject = pegaMarcados();
   const rate = document.querySelector('input[name=rate]:checked').value;
   const observation = document.getElementById('textarea').value;
   form.innerHTML = `<p>Nome: ${name} ${lastname}</p>
   <p>Email: ${email}</p>
   <p>Casa: ${house}</p>
   <p>Família: ${family} </p>
-  <p>Matérias: ${subjects}</p>  
+  <p>Matérias: ${subject}</p>  
   <p>Avaliação: ${rate}</p>
   <p>Observações: ${observation}</p>`;
- };
+}
 
 btnSubmit.addEventListener('click', sendButton);
