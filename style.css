@@ -15,6 +15,7 @@ input , button , select , textarea {
   border-radius: 8px;
   border: 1px solid black;
   background-color: white;
+  min-width: 0;
 }
 
 /* estilizacao do header */
@@ -24,6 +25,8 @@ input , button , select , textarea {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 header h1 {
@@ -36,11 +39,12 @@ header h1 {
 
 .trybewarts-login {
   display: flex;
+  flex-basis: 60%;
 }
 
 .trybewarts-login input , button {
   padding: 5px;
-  margin-left: 8px;
+  margin-left: 8px;  
 }
 
 .trybewarts-login button {
@@ -51,6 +55,7 @@ header h1 {
 main {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 h2 {
@@ -75,18 +80,20 @@ main form {
 
 .imagem-logo img {
   height: 500px;
+  max-width: 100%;
+  min-width: 400px;
 }
 
 /* Estilizacao dos inputs nome e sobrenome em linha */
-.nome-sobrenome {
-  display: flex;
-  margin: 5px;
+.nome-sobrenome {  
+  display: flex;  
+  margin: 5px;  
 }
 
-.nome-sobrenome #input-name , .nome-sobrenome #input-lastname {
+.nome-sobrenome #input-name , .nome-sobrenome #input-lastname {  
   flex-basis: 50%;
   padding: 5px;
-  margin: 0 2px;
+  margin: 0 2px;  
 }
 
 /* estilização da linha entre inputs do formulário */
@@ -131,7 +138,7 @@ hr {
 }
 
 .radio-family div {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .radio-rate {
@@ -156,11 +163,35 @@ hr {
   margin: 0 40px;
 }
 
+/* Estilizacao da avaliação */
+
+.radio-rate {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.radio-rate div {
+  margin-left: 5px;
+}
+
 /* Estilizacao textarea */
 .box-textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+/* Estilizacão da permissão */
+
+.permicao {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;  
+}
+
+.permicao input {
+  min-width: 15px;
 }
 
 /* Estilizacao do footer */
@@ -171,3 +202,78 @@ footer {
   text-align: center;
   padding-top: 5px;
 }
+
+/* Media querrys */
+
+@media screen and (max-width: 1290px) {
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main form {  
+    flex-basis: 70%;  
+    min-width: 0;
+  }
+}
+
+@media (max-width: 1039px){
+  .header {
+    justify-content: center;
+  }  
+}
+
+@media (max-width: 913px){
+  #conteudo .react {
+    margin: 0 69px 0 8px;
+  }
+}
+
+@media (max-width: 731px) {
+  .family-conteudo {
+    flex-direction: column;
+  }
+
+  .familys {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #conteudo div:nth-child(1) {
+    margin: 0;
+  }
+
+  #conteudo .react {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .trybewarts-login {        
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 629px){
+  #conteudo .react {
+    margin: 0 69px 0 8px;
+  }
+}
+
+@media (max-width: 452px){
+  #conteudo .react {
+    margin: 0 40px;
+  }
+
+  .email-house {
+    flex-direction: column;
+  }
+
+  #input-email , .box-house {
+    width: 100%;
+  }
+}
+
+
