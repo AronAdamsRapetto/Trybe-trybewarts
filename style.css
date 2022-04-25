@@ -44,7 +44,7 @@ header h1 {
 
 .trybewarts-login input , button {
   padding: 5px;
-  margin-left: 8px;  
+  margin-left: 8px;
 }
 
 .trybewarts-login button {
@@ -85,15 +85,15 @@ main form {
 }
 
 /* Estilizacao dos inputs nome e sobrenome em linha */
-.nome-sobrenome {  
-  display: flex;  
-  margin: 5px;  
+.nome-sobrenome {
+  display: flex;
+  margin: 5px;
 }
 
-.nome-sobrenome #input-name , .nome-sobrenome #input-lastname {  
+.nome-sobrenome #input-name , .nome-sobrenome #input-lastname {
   flex-basis: 50%;
   padding: 5px;
-  margin: 0 2px;  
+  margin: 0 2px;
 }
 
 /* estilização da linha entre inputs do formulário */
@@ -143,6 +143,9 @@ hr {
 
 .radio-rate {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .radio-rate input {
@@ -159,20 +162,12 @@ hr {
   flex-basis: 70%;
 }
 
-#conteudo div {
-  margin: 0 40px;
-}
-
-/* Estilizacao da avaliação */
-
-.radio-rate {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
 .radio-rate div {
   margin-left: 5px;
+}
+
+#conteudo div {
+  margin: 0 40px;
 }
 
 /* Estilizacao textarea */
@@ -183,11 +178,10 @@ hr {
 }
 
 /* Estilizacão da permissão */
-
 .permicao {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end;  
+  justify-content: flex-end;
 }
 
 .permicao input {
@@ -205,43 +199,46 @@ footer {
 
 /* Media querrys */
 
-@media screen and (max-width: 1290px) {
+@media screen and ( max-width : 1290px ) {
+
   main {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  main form {  
-    flex-basis: 70%;  
+  main form {
+    flex-basis: 70%;
     min-width: 0;
   }
 }
 
-@media (max-width: 1039px){
+@media ( max-width : 1039px ) {
+
   .header {
     justify-content: center;
-  }  
+  }
 }
 
-@media (max-width: 913px){
+@media ( max-width : 913px ) {
+
   #conteudo .react {
     margin: 0 69px 0 8px;
   }
 }
 
-@media (max-width: 731px) {
+@media ( max-width : 731px ) {
+
   .family-conteudo {
     flex-direction: column;
   }
 
   .familys {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
   }
 
-  #conteudo div:nth-child(1) {
+  #conteudo div:nth-child( 1 ) {
     margin: 0;
   }
 
@@ -250,19 +247,22 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
-  .trybewarts-login {        
-      flex-direction: column;
+@media ( max-width : 700px ) {
+
+  .trybewarts-login {
+    flex-direction: column;
   }
 }
 
-@media (max-width: 629px){
+@media ( max-width : 629px ) {
+
   #conteudo .react {
     margin: 0 69px 0 8px;
   }
 }
 
-@media (max-width: 452px){
+@media ( max-width : 452px ) {
+
   #conteudo .react {
     margin: 0 40px;
   }
@@ -275,5 +275,3 @@ footer {
     width: 100%;
   }
 }
-
-
